@@ -1,0 +1,27 @@
+{
+  "RuleVariables": {
+    "IPSets": {
+      "HOME_NET": {
+        "Definition": [
+          "10.0.0.0/16",
+          "10.1.0.0/16",
+          "10.2.0.0/16",
+          "10.3.0.0/16",
+          "100.1.0.0/16"
+        ]
+      }
+    }
+  },
+  "RulesSource": {
+    "RulesSourceList": {
+      "Targets": [
+          ".yahoo.co.jp"
+      ],
+      "TargetTypes": [
+          "TLS_SNI",
+          "HTTP_HOST"
+      ],
+      "GeneratedRulesType": "DENYLIST"
+    }
+  }
+}
